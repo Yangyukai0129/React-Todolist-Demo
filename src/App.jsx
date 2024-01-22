@@ -3,6 +3,8 @@ import "./App.css";
 import Todo from "./Todo";
 import { ACTIONS } from "./Actions";
 
+// state:現在設為todos，當前的狀態，表示应用程序的某个部分的当前数据
+// action:描述狀態變化的對象
 const reducer = (todos, action) => {
   console.log(todos, action)
   const { todoContent, id } = action.payload
